@@ -162,10 +162,10 @@ function simpleObjectsLayout() {
         var element = document.createElement( 'div' );
         element.className = 'element';
         
-        var number = document.createElement( 'div' );
-        number.className = 'number';
-        number.textContent = ( i / 5 ) + 1;
-        element.appendChild( number );
+        // var number = document.createElement( 'div' );
+        // number.className = 'number';
+        // number.textContent = ( i / 5 ) + 1;
+        // element.appendChild( number );
         
         var symbol = document.createElement( 'div' );
         symbol.className = 'symbol';
@@ -176,9 +176,9 @@ function simpleObjectsLayout() {
         details.className = 'details';
         details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
         if(table[ i + 2 ] == "F"){
-            element.style.backgroundColor = 'rgba(255,20,147,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+            element.style.backgroundColor = 'rgba(255,20,147)';
         }else{
-            element.style.backgroundColor = 'rgba(0,0,225,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+            element.style.backgroundColor = 'rgba(0,0,225)';
         }
         element.appendChild( details );
 
@@ -264,7 +264,7 @@ function coneLayout(){
         vector.y = object.position.y;
         vector.z = object.position.z * 2;  
         object.lookAt(vector);
-        targets.cone.push (object);
+        targets.cone.push( object );
     }
 }
 
